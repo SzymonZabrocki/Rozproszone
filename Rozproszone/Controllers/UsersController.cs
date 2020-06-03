@@ -35,6 +35,7 @@ namespace Rozproszone.Controllers
             return Ok(user);
         }
 
+        [AllowAnonymous]
         [HttpPost("register")]
         public ActionResult<User> PostUser(User user)
         {
